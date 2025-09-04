@@ -3,81 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@kmalpy - Description</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'montserrat';
-            box-sizing: border-box;
-        }
-
-        body {
-            padding: 1.2em;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        p {
-            text-align: center;
-        }
-
-        body p:nth-child(1) {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            font-size: 3.2rem;
-            font-weight: 600;
-        }
-
-        body p:nth-child(2) {
-            font-size: 1.6rem;
-            font-weight: 600;
-        }
-
-        body p:nth-child(3) {
-            font-size: 1.6rem;
-            font-weight: 600;
-            margin-bottom: 2rem;
-        }
-
-        body p:nth-child(4) {
-            opacity: 0.5;
-            font-size: 1.2rem;
-        }
-
-        /* #wave:hover {
-            display: inline-block;     /* biar transform jalan */
-            /* transform-origin: 70% 70%; /* titik putar di “pergelangan” */
-            /* animation: hello 1.8s ease-in-out infinite; */
-        /* }  */
-
-        /* @keyframes hello {
-            0%   { transform: rotate(0deg); }
-            10%  { transform: rotate(14deg); }
-            20%  { transform: rotate(-8deg); }
-            30%  { transform: rotate(14deg); }
-            40%  { transform: rotate(-4deg); }
-            50%  { transform: rotate(10deg); }
-            60%,100% { transform: rotate(0deg); }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .wave { animation: none; } */
-         /* } */
-    </style>
+    <title>Akmal Hasan.</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>Hi, I'm <u>Akmal</u>
-        <!-- <span id="wave">&#128075;</span> -->
-    </p>
-    <p>Front-End Developer from <span style="color: red;">Indonesia</span>.</p>
-    <p>Interested in <span style="background-color: yellow;">Electronics</span> and <span style="color: rgb(56, 150, 194);">IoT Development.</span></p>
-    <p>Well, I'm not selling my 'front-end development' here. I'll update this portfolio when I have a project I want to share, إِنْ شَاءَ اللَّهُ</p>
-</body>
+    <div class="container">
+        <header>
+            <div class="logo">AKMAL HASAN</div>
+            <nav>
+                <a href="#banner">Home</a>
+                <a href="#card-about">About</a>
+                <a href="Skills">Skills</a>
+                <a href="Competence">Competence <span style="color: var(--list);">(soon)</span></a>
+            </nav>
+        </header>
+        
+        <div id="banner">
+            <p>Akmal Hasan Hasibuan.</p>
+            <p>Front-End Developer - IoT Enthusiast</p>
+            <p>Combining <span style="font-family: 'Story SCRIPT'; color: var(--blue); font-size: 2rem;">Creativity</span> and <span style="font-family: 'Share Tech'; color: var(--orange); font-size: 2rem">Technique</span></p>
+        </div>
 
+        <h2>About Me</h2>
+        <div class="card card-about">
+            <div class="dots-container">
+                <div class="dot-green"></div>
+            </div>
+            <div class="about-text">
+                <p>Akmal is a front-end engineer from Indonesia. However, he is determined and interested in exploring and working in the IoT and electronics fields in the future.</p>
+                <p>With experience in web development, I keep IoT tools functional without compromising on user experience.</p>
+            </div>
+        </div>
+
+        <h2>Skills</h2>
+        <div class="card-container">
+            <div class="card card1">
+                <div class="dots-container">
+                    <div class="dot-blue"></div>
+                </div>
+                <div class="skills-text">
+                    <p>Web Development</p>
+                    <div class="list-container">
+                        <ul>
+                            <li class="css">CSS</li>
+                            <li class="js">JS</li>
+                            <li class="php">PHP</li>
+                            <li class="mysql">MySQL</li>
+                        </ul>
+                        <ul>
+                            <li class="tailwind">Tailwind</li>
+                            <li class="python">Python</li>
+                            <li class="chart">ChartJS</li>
+                            <li class="figma">Figma</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="electronic-language">
+                <div class="card card2">
+                    <div class="dots-container">
+                        <div class="dot-orange"></div>
+                    </div>
+                    <div class="skills-text">
+                        <p>Electronics Related</p>
+                        <p>Still learning and developing. Currently there are no technical skills to list.</p>
+                    </div>
+                </div>
+                
+
+                <div class="card card3">
+                        <div class="dots-container">
+                        <div class="dot-brown"></div>
+                    </div>
+                    <div class="skills-text">
+                        <p>Language</p>
+                        <p>I understand Indonesia (native) and English (-)</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
