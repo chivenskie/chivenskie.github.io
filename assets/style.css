@@ -1,0 +1,236 @@
+:root {
+    --bg: #222;
+    --text: #fafafa;
+    --card-bg: #f9f9f9;
+    --blue: #08c9ff;
+    --orange: #FFC108;
+    --red: #dc2020;
+    --pink: #84c584;
+    --green: rgb(0, 165, 91);
+    --grey: #fafafa31;
+    --title-border: #868686;
+    --list: #fafafaa3;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+}
+body {
+    background: var(--bg);
+    color: var(--text);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+header {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    padding: 2rem;
+}
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    gap: 0.8rem
+}
+nav a {
+    text-decoration: none;
+    color: var(--text);
+}
+#banner {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#banner p:nth-child(1) {
+    font-size: 4rem;
+}
+#banner p:nth-child(2) {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.436);
+    margin-bottom: 4rem;
+}
+#banner p:nth-child(3) {
+    font-size: 1.6rem;
+}
+.card {
+    display: flex;
+    padding: 0.8rem;
+    margin: 0 0rem 0rem 2rem;
+    gap: 0.8rem;
+    border: 0.1px solid var(--grey);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+    flex: 1;
+}
+.electronic-language {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+.dots-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; /* Jarak antara setiap dot */
+    margin-top: 0.4rem; /* Sesuaikan margin untuk sejajar dengan teks pertama */
+}
+.dot-green {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: var(--green); /* Ganti dengan warna dot yang Anda inginkan */
+    border-radius: 50%;
+}
+.dot-blue {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: var(--blue); /* Ganti dengan warna dot yang Anda inginkan */
+    border-radius: 50%;
+}
+.dot-orange {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: var(--orange); /* Ganti dengan warna dot yang Anda inginkan */
+    border-radius: 50%;
+}
+.dot-red {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: var(--red); /* Ganti dengan warna dot yang Anda inginkan */
+    border-radius: 50%;
+}
+.dot-brown {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: var(--pink); /* Ganti dengan warna dot yang Anda inginkan */
+    border-radius: 50%;
+}
+.about-text {
+    font-size: 1.4rem;
+}
+h2 {
+    margin: 0 auto;
+    max-width: fit-content;
+    font-size: 2rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.2rem solid var(--title-border);
+}
+.about-text p:nth-child(2) {
+    color: #ccc;
+    border-left: 0.2rem solid var(--grey);
+    margin-top: 0.8rem;
+    padding-left: 0.8rem;
+}
+.card-container {
+    display: flex;
+    margin: 2rem 2rem 4rem 0;
+}
+.card-about {
+    margin: 2rem 2rem 4rem 2rem;
+}
+.skills-text p:nth-child(1) {
+    font-size: 1.4rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 2px solid var(--title-border);
+    width: fit-content;
+}
+.skills-text p:nth-child(2) {
+    font-size: 1.2rem;
+    color: var(--title-border);
+    margin-bottom: 0.8rem;
+}
+.list-container {
+    display: flex;
+    margin-left: 0.4rem;
+    gap: 3rem;
+}
+li {
+    color: var(--list);
+    list-style-type: none;
+    margin-bottom: 0.4em;
+    font-size: 1rem;
+}
+li:hover {
+    font-size: 1.2rem;
+    font-weight: 800;
+    transition: 0.3s;
+}
+.css {
+    color: rgb(248, 248, 248);
+}
+.css:hover {
+    color: #08c9ff;
+}
+.js:hover {
+    color: #F0DB4F;
+}
+.php:hover {
+    color: #4F5B93; 
+}
+.mysql:hover {
+    color: #00758F;
+}
+.tailwind:hover {
+    color: #06B6D4;
+}
+.python:hover {
+    color: #FFE873;
+}
+.chart:hover {
+    color: #FD9D9F;
+}
+.figma:hover {
+    color: #FF7262;
+}
+.card1 {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+.card2 {
+    flex: 4;
+    margin: 0 0 4rem 2rem
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 480px) {
+  body {
+    padding: 0 0.8rem;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    display: none;
+  }
+  header {
+    height: 10vh;
+    padding: 0;
+    border-bottom: 0.1px solid #fafafa22;
+  }
+}
+
