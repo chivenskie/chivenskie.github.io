@@ -136,7 +136,7 @@ h2 {
     margin: 2rem 2rem 4rem 0;
 }
 .card-about {
-    margin: 2rem 2rem 4rem 2rem;
+    margin: 2rem 0.8rem 4rem 0.8rem;
 }
 .skills-text p:nth-child(1) {
     font-size: 1.4rem;
@@ -233,4 +233,5 @@ li:hover {
     border-bottom: 0.1px solid #fafafa22;
   }
 }
+
 
